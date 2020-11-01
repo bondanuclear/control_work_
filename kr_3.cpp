@@ -14,7 +14,10 @@ public:
 	virtual ~Base(); // destructor
 
 	
-	 static int S() { return Base::s; } // static methods
+	 static int S()
+	 { 
+		 return Base::s; 
+	 } 
 
 	
 	 virtual int acc() const = 0;
@@ -77,7 +80,7 @@ public:
 	 }
 
 private:
-	// static member data
+	
 	static int n;
 
 };
